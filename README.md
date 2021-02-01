@@ -1,6 +1,14 @@
 # eCommerce
  This repository contains the code for a MERN based eCommerce webapp:
  
+ ## Tech Stack:
+ Programming Language: Javascript (intermediate)
+ Database used: MongoDB
+ CSS framework: Bootstrap 4
+ Libraries: ReactJS
+ Framework: ExpressJS
+
+ 
 ## Prerequisites:
 - Install Mongodb & Robo3T
 - Install React
