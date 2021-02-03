@@ -26,7 +26,7 @@ const Base = ({
         </div>
         <div className="col-sm-4 text-white text-center mt-5 mb-5">
         © 2020 Copyright: Ecommerce<br></br>
-        Developed by <a href="https://github.com/RakshitRiya" className="text-white"><i>Riya</i></a> 
+        Developed by <a href="https://github.com/GeekyGoyal" className="text-white"><i>Aparna Goyal</i></a> 
         </div>
         <div className="col-sm-4 text-white text-right">
           <u>Connect us with</u><br></br><br></br>
