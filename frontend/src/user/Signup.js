@@ -93,7 +93,7 @@ const Signup = () => {
 							<div class="button-card mt-4">					
 								<div class="action-buttons mb-3 mt-2">
 									
-									<a href="#loginModal2" data-toggle="modal" class="btn btn-theme btn-primary text-white"> Login</a>
+									<a href="#loginModal2" data-toggle="modal" class="btn btn-theme btn-primary text-white">Login</a>
 									<a href="#registerModal2" data-toggle="modal" class="btn btn-theme btn-success text-white">Register</a>
 								
 								</div>
@@ -117,13 +117,13 @@ const Signup = () => {
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-user"></i></span>
-											<input type="text" class="form-control" name="username" placeholder="Enter your username" required="required" />
+											<input type="text" class="form-control" name="username" placeholder="Enter your username" required="required" onChange={handleChange} />
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-											<input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on" />
+											<input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on" onChange={handleChange} />
 										</div>
 									</div>
 									<div class="row pl-1 pr-1">
@@ -138,7 +138,7 @@ const Signup = () => {
 										</div>
 									</div>
 									<div class="form-group text-center mt-2 mb-0">
-										<button type="submit" class="btn btn-primary btn-sm">Login</button>
+										<button type="submit" class="btn btn-primary btn-sm" onClick={formSubmit}>Login</button>
 										
 									</div>
 									<p class="hint-text mt-0">or login with</p>
@@ -161,34 +161,34 @@ const Signup = () => {
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 							</div>
 							<div class="modal-body">
-								<form action="" method="post" class="mt-3">
+								<form action="" method="put" class="mt-3">
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-user"></i></span>
-											<input type="text" class="form-control" name="name" placeholder="Enter your name" required="required" />
+											<input type="text" class="form-control" name="name" placeholder="Enter your name" required="required" onChange={handleChange} />
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-											<input type="text" class="form-control" name="email" placeholder="Enter email address" required="required" />
+											<input type="text" class="form-control" name="email" placeholder="Enter email address" required="required" onChange={handleChange} />
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-											<input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on" />
+											<input type="password" class="form-control" name="password" placeholder="Enter password" required="required" autocomplete="on" onChange={handleChange} />
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-eye-slash"></i></span>
-											<input type="password" class="form-control" name="password_confirmation" placeholder="Retype password" required="required" autocomplete="on" />
+											<input type="password" class="form-control" name="password_confirmation" placeholder="Retype password" required="required" autocomplete="on" onChange={handleChange} />
 										</div>
 									</div>
 
 									<div class="form-group text-center">
-										<button id="signup-button" type="submit" class="btn btn-primary btn-sm">Register</button>
+										<button id="signup-button" type="submit" class="btn btn-primary btn-sm" onClick={formSubmit}>Register</button>
 										
 									</div>
 								</form>
@@ -219,5 +219,4 @@ const Signup = () => {
 };
 
 export default Signup;
-
 
