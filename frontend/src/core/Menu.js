@@ -47,7 +47,7 @@ const Menu = ({ history }) => (
               <i class="fa fa-user" aria-hidden="true"></i>
             </Nav.Link>
           )}
-         {!isAuthenticated() && (
+          {!isAuthenticated() && (
             <Fragment>
               <Nav.Link style={currentTab(history, "/signup")} href="/signup" title="Signup">
               <i class="fa fa-sign-in" aria-hidden="true"></i>
